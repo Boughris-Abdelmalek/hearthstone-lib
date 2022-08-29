@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Factions from './Filters/Faction/Factions';
 import Horde from './Filters/Faction/Horde/Horde';
 import Alliance from './Filters/Faction/Alliance/Alliance';
@@ -13,7 +13,7 @@ import QualityChoice from './Filters/Quality/QualityChoice/QualityChoice';
 
 const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/factions' element={<Factions />} />
       <Route path='/alliance' element={<Alliance />} />
@@ -24,7 +24,7 @@ const App = () => {
       <Route path='/cardVisual' element={<CardVisual />} />
       <Route path='/quality' element={<Quality />} />
       <Route path='/qualityChoice' element={<QualityChoice />} />
-    </Router>
+    </Routes>
   );
 };
 

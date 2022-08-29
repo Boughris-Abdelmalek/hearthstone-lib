@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'/hearthstone-lib'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
