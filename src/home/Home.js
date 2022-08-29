@@ -22,6 +22,12 @@ const Home = () => {
         <>
         <Header />
         <main className={styles.main}>
+            <div className={styles.searchContainer}>
+                <form action="submit" className={styles.searchBarForm}>
+                    <input type={'text'} placeholder='Enter a card name' className={styles.searchBar}/>
+                    <input type={'submit'} value='Search' className={styles.searchBtn}/>
+                </form>
+            </div>
             <div className={styles.choice}>
                 <Link to='/factions' className={styles.choiceButton}>Faction</Link>
                 <Link to='/types' className={styles.choiceButton}>Type</Link>
@@ -29,12 +35,6 @@ const Home = () => {
                 <button className={styles.choiceButton}>Race</button>
                 <button className={styles.choiceButton}>Class</button>
                 <button className={styles.choiceButton}>Set</button>
-            </div>
-            <div className={styles.searchContainer}>
-                <form action="submit" className={styles.searchBarForm}>
-                    <input type={'text'} placeholder='Enter a card name' className={styles.searchBar}/>
-                    <input type={'submit'} value='Search' className={styles.searchBtn}/>
-                </form>
             </div>
         </main>
         <footer className={styles.footer}>
