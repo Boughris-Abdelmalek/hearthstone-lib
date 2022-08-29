@@ -13,7 +13,7 @@ import QualityChoice from './Filters/Quality/QualityChoice/QualityChoice';
 
 const App = () => {
   return (
-    <Routes basename="/Hearthstone-Library/">
+    <Routes basename="/hearthstone-lib">
       <Route path='/' element={<Home />}/>
       <Route path='/factions' element={<Factions />} />
       <Route path='/alliance' element={<Alliance />} />
