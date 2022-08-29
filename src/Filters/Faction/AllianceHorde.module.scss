@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+    padding-top: 8em;
+    overflow: scroll;
+
+
+    >ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap: 1rem;
+        list-style: none;
+
+        >li {
+            cursor: pointer;
+        }
+
+        >li:hover {
+            transform: scale(1.25);
+            transition: all .125s linear;
+        }
+    }
+}

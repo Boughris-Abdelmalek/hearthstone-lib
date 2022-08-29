@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2em;
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/2324571.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #C0AC8C;
+}
+
+.logoContainer {
+    height: 100px;
+    width: 200px;
+}
+
+.settings {
+    background: #1A1814;
+    width: 5em;
+    height: auto;
+    padding-inline: 15px;
+    padding-block: 5px;
+    border-radius: 10em;
+    border: 5px solid #8D8883;
+    cursor: pointer;
+}
+
+.title {
+    background-color: #C0AC8C;
+    color: #4D3B1C;
+    border: 3px solid #343230;
+    border-radius: 20px;
+    padding-inline: 1em;
+    margin-right: 4em;
+}

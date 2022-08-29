@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.qualityContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    >.quality {
+        
+        .link {
+            font-size: 2em;
+            border-radius: 10px;
+            background-image: linear-gradient(#795440, #b18d80, #795440);
+            border: 3px solid #343230;
+            padding-inline: 1em;
+            padding-block: .5em;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+    }
+    
+    >img {
+        position: absolute;
+        top: 90%;
+        width: 2em;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        padding-top: 10em;
+        flex-direction: column;
+        height: 100%;
+        gap: 8em;
+    }
+}
