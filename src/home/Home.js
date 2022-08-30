@@ -48,7 +48,7 @@ const Home = () => {
           </Link>
           <Link to="/race" className={styles.choiceButton}>Race</Link>
           <Link to="/class" className={styles.choiceButton}>Class</Link>
-          <button className={styles.choiceButton}>Set</button>
+          <Link to="/set" className={styles.choiceButton}>Set</Link>
         </div>
       </main>
       <footer className={styles.footer}>

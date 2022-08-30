@@ -14,6 +14,8 @@ import Race from './Filters/Race/Race';
 import RaceChoice from './Filters/Race/RaceChoice/RaceChoice';
 import Class from './Filters/Class/Class';
 import ClassChoice from './Filters/Class/ClassChoice/ClassChoice';
+import Set from './Filters/Set/Set';
+import SetChoice from './Filters/Set/SetChoice/SetChoice';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
       <Route path='/raceChoice' element={<RaceChoice />} />
       <Route path='/class' element={<Class />} />
       <Route path='/classChoice' element={<ClassChoice />} />
+      <Route path='/set' element={<Set />} />
+      <Route path='/setChoice' element={<SetChoice />} />
     </Routes>
   );
 };
