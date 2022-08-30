@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,7 +10,9 @@
         width: 100%;
         height: 100%;
         place-items: center;
-        padding-top: 5em;
+        padding-right: 2em;
+        padding-top: 13em;
+        gap: 5em;
 
 
         >.race {
@@ -26,6 +28,26 @@
 
         >.race:hover {
             background-image: linear-gradient(#795440, #b18d80, #795440);
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        >ul {
+            padding-top: 10em;
+            padding-right: 2em;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1em;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .container {
+        >ul{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1em;
         }
     }
 }
