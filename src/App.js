@@ -10,6 +10,8 @@ import CardVisual from './Filters/CardVisual/CardVisual';
 import TypeSelected from './Filters/Type/TypeSelected/TypeSelected';
 import Quality from './Filters/Quality/Quality';
 import QualityChoice from './Filters/Quality/QualityChoice/QualityChoice';
+import Race from './Filters/Race/Race';
+import RaceChoice from './Filters/Race/RaceChoice/RaceChoice';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
       <Route path='/cardVisual' element={<CardVisual />} />
       <Route path='/quality' element={<Quality />} />
       <Route path='/qualityChoice' element={<QualityChoice />} />
+      <Route path='/race' element={<Race />} />
+      <Route path='/raceChoice' element={<RaceChoice />} />
     </Routes>
   );
 };

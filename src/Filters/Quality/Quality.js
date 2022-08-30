@@ -6,11 +6,13 @@ import legendary from './img/Legendary.webp';
 import styles from './Quality.module.scss';
 import Header from '../../header/Header';
 import { Link } from 'react-router-dom';
+import Return from '../../header/Return';
 
 const Quality = () => {
   return (
     <div className={styles.container}>
       <Header />
+      <Return path=''/>
     <div className={styles.qualityContainer}>
       <div className={styles.quality}>
       <Link to='/qualityChoice' state='common' className={styles.link}>Common</Link>
