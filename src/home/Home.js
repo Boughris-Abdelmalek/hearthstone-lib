@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
 import user from "./img/user.png";
 import Header from "../header/Header";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Home = () => {
   const [date, setDate] = useState(new Date());
@@ -22,20 +23,7 @@ const Home = () => {
     <>
       <Header />
       <main className={styles.main}>
-        <div className={styles.searchContainer}>
-          <form action="submit" className={styles.searchBarForm}>
-            <input
-              type={"text"}
-              placeholder="Enter a card name"
-              className={styles.searchBar}
-            />
-            <input
-              type={"submit"}
-              value="Search"
-              className={styles.searchBtn}
-            />
-          </form>
-        </div>
+        <SearchBar />
         <div className={styles.choice}>
           <Link to="/factions" className={styles.choiceButton}>
             Faction
