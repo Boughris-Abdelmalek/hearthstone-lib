@@ -10,14 +10,14 @@ import styles from "../../Faction/AllianceHorde.module.scss";
 const RaceChoice = () => {
   const location = useLocation();
   const data = location.state;
-  const [raceChoice, setRaceChoice] = useState("");
+  const [classChoice, setClassChoice] = useState("");
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchQuality = async () => {
       const options = {
         method: "GET",
-        url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/races/${data}`,
+        url: `https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/classes/${data}`,
         headers: {
           "X-RapidAPI-Key":
             "40cde80c0cmshe3ccc0a6b31c3ddp1debebjsn27a9eb345236",
@@ -28,7 +28,7 @@ const RaceChoice = () => {
       const quality = await axios.request(options);
       console.log(quality.data);
 
-      setRaceChoice(quality.data);
+      setClassChoice(quality.data);
       setLoading(false);
     };
     fetchQuality();
@@ -37,12 +37,12 @@ const RaceChoice = () => {
   return (
     <div className={styles.container}>
       <Header />
-      <Return path="race" />
+      <Return path="class" />
       {isLoading ? (
         <Loader />
       ) : (
         <ul>
-          {raceChoice.map((e) => {
+          {classChoice.map((e) => {
             if (e.hasOwnProperty("imgGold") && e.hasOwnProperty("img")) {
               return (
                 <li key={e.cardId}>
