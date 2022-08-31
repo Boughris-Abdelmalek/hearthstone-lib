@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from './settings.module.scss';
+import { ExternalLink } from 'react-external-link';
 
 const Settings = () => {
   return (
-    <div>settings</div>
+    <div className={styles.container}>
+        <ExternalLink href='https://github.com/Boughris-Abdelmalek'>GitHub</ExternalLink>
+        <ExternalLink href='https://www.linkedin.com/in/abdelmalek-boughris/'>LinkedIn</ExternalLink>
+    </div>
   )
 }
 

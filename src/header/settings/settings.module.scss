@@ -1,0 +1,21 @@
+.container {
+    position: absolute;
+    left: 73%;
+    top: 100%;
+    width: 12em;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2C1312;
+    border-radius: 5px;
+    border: 3px solid #522422;
+    height: 5em;
+    gap: 1em;
+    
+    >* {
+        color: #B59391;
+        
+    }
+}

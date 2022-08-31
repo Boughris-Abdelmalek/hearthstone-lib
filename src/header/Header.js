@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import logo from './img/hearthstone-logo.png';
 import settings from './img/settings.png';
 import { Link } from 'react-router-dom';
-import Settings from './settings/settings';
+import Settings from './settings/Settings';
 
 
 const Header = () => {
