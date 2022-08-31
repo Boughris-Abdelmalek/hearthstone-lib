@@ -1,7 +1,8 @@
 .container {
-    position: absolute;
-    left: 73%;
-    top: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 12em;
     font-size: 1.25em;
     display: flex;
@@ -13,9 +14,13 @@
     border: 3px solid #522422;
     height: 5em;
     gap: 1em;
+    box-shadow: 0 0 100px 400px rgba(2, 2, 2, 0.74);
     
     >* {
         color: #B59391;
-        
+    }
+
+    >*:hover {
+        color: #8b6e6c;
     }
 }
