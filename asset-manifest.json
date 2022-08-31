@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hearthstone-lib/static/css/main.2f80d256.css",
+    "main.css": "/hearthstone-lib/static/css/main.0cea1055.css",
     "main.js": "/hearthstone-lib/static/js/main.09527ea7.js",
     "static/media/factions.jpg": "/hearthstone-lib/static/media/factions.ac15a48f5ddac4658f06.jpg",
     "static/media/Hearthstone-bg.jpg": "/hearthstone-lib/static/media/Hearthstone-bg.daf5a775f8d629cc595e.jpg",
@@ -11,11 +11,11 @@
     "static/media/Rare.webp": "/hearthstone-lib/static/media/Rare.24cc0da9eac7b7c0b038.webp",
     "static/media/Epic.webp": "/hearthstone-lib/static/media/Epic.a2fa9d30b10657cb011f.webp",
     "index.html": "/hearthstone-lib/index.html",
-    "main.2f80d256.css.map": "/hearthstone-lib/static/css/main.2f80d256.css.map",
+    "main.0cea1055.css.map": "/hearthstone-lib/static/css/main.0cea1055.css.map",
     "main.09527ea7.js.map": "/hearthstone-lib/static/js/main.09527ea7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f80d256.css",
+    "static/css/main.0cea1055.css",
     "static/js/main.09527ea7.js"
   ]
 }
