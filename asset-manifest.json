@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hearthstone-lib/static/css/main.21e7d1f9.css",
-    "main.js": "/hearthstone-lib/static/js/main.353965da.js",
+    "main.css": "/hearthstone-lib/static/css/main.e406458c.css",
+    "main.js": "/hearthstone-lib/static/js/main.67db4bbf.js",
     "static/media/factions.jpg": "/hearthstone-lib/static/media/factions.ac15a48f5ddac4658f06.jpg",
     "static/media/Hearthstone-bg.jpg": "/hearthstone-lib/static/media/Hearthstone-bg.daf5a775f8d629cc595e.jpg",
     "static/media/hearthstone-logo.png": "/hearthstone-lib/static/media/hearthstone-logo.f832bf478670308b1af1.png",
@@ -11,11 +11,11 @@
     "static/media/Rare.webp": "/hearthstone-lib/static/media/Rare.24cc0da9eac7b7c0b038.webp",
     "static/media/Epic.webp": "/hearthstone-lib/static/media/Epic.a2fa9d30b10657cb011f.webp",
     "index.html": "/hearthstone-lib/index.html",
-    "main.21e7d1f9.css.map": "/hearthstone-lib/static/css/main.21e7d1f9.css.map",
-    "main.353965da.js.map": "/hearthstone-lib/static/js/main.353965da.js.map"
+    "main.e406458c.css.map": "/hearthstone-lib/static/css/main.e406458c.css.map",
+    "main.67db4bbf.js.map": "/hearthstone-lib/static/js/main.67db4bbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.21e7d1f9.css",
-    "static/js/main.353965da.js"
+    "static/css/main.e406458c.css",
+    "static/js/main.67db4bbf.js"
   ]
 }
