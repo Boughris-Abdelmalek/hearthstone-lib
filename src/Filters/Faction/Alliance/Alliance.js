@@ -4,9 +4,11 @@ import axios from "axios";
 import Header from "../../../header/Header";
 import FactionsList from "../FactionsList";
 import Return from "../../../header/Return";
+import Loader from '../../../home/Loader/Loader';
 
 const Alliance = () => {
   const [cards, setCards] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,6 +27,7 @@ const Alliance = () => {
       console.log(response.data);
 
       setCards(response.data);
+      setLoading(false);
     };
 
     fetchData();
@@ -34,7 +37,13 @@ const Alliance = () => {
     <div className={styles.container}>
       <Header />
       <Return path="factions" />
-      <FactionsList cards={cards} />
+      {
+        isLoading ? (
+          <Loader />
+        ) : (
+          <FactionsList cards={cards} />
+        )
+      }
     </div>
   );
 };
