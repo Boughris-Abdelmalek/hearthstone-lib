@@ -79,13 +79,17 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.header-container {
   position: relative;
 }
 
 .return {
   position: fixed;
-  top: 14%;
+  top: 16%;
   left: 0;
+  z-index: 10;
 
   >img {
     width: 3.5em;
